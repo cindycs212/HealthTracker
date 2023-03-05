@@ -1,6 +1,6 @@
 from django.db import models
 from accounts.models import UserAccount
-from fernet_fields import EncryptedTextField
+# from fernet_fields import EncryptedTextField
 
 # Create your models here.
 class Tracker(models.Model):

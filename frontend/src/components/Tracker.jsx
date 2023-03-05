@@ -17,7 +17,6 @@ const Tracker = ({isAuthenticated, cycles, getCycle, deleteCycle, addCycle}) => 
 
     return (
         <>
-            <div>All Cycles</div>
             <button className='btn btn-success btn-sm' data-bs-toggle='modal' data-bs-target='#addCycle'>
                 Add New Cycle
             </button>

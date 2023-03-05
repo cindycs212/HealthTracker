@@ -33,7 +33,7 @@
   "scripts": {
     "watch": "NODE_OPTIONS=--openssl-legacy-provider npm-watch",
     "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build && rm -r ../backend/build && cp -r build ../backend/",
     "test": "NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
     "eject": "NODE_OPTIONS=--openssl-legacy-provider react-scripts eject"
   },
