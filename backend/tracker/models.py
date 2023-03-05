@@ -1,10 +1,10 @@
 from django.db import models
 from accounts.models import UserAccount
-# from fernet_fields import EncryptedTextField
+from fernet_fields import EncryptedDateField, EncryptedIntegerField
 
 # Create your models here.
 class Tracker(models.Model):
-    start_date = models.DateField() # YYYY-MM-DD
-    end_date = models.DateField()
-    duration = models.IntegerField()
+    start_date = EncryptedDateField()
+    end_date = EncryptedDateField()
+    duration = EncryptedIntegerField()
     owner = models.ForeignKey(UserAccount, related_name='trackers', on_delete=models.CASCADE, null=True)
